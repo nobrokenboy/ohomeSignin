@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <title>注册</title>
+    <link rel="stylesheet" href="/static/css/base.min.css">
+    <script src="http://webapi.amap.com/maps?v=1.3&key=19d07b564cdcd9714bb4ff01c2ec87c7"></script>
+    <script src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="/static/js/bundle.min.js"></script>
+</head>
+<body>
+<style>
+    #user .btn-href{
+        color:#fff;
+    }
+</style>
+<div class="app-common-section" id="user" v-if="isShow" v-cloak>
+    <div class="app-common-header">
+        <span>个人中心</span>
+    </div>
+    <div class="app-common-body">
+        
+        <form>
+            <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
+                <label>姓名:</label>
+                <input type="text" class="form-text" placeholder="请输入姓名" v-model.trim="requestData.username" @blur="nameTest" @focus="testField.isNameNull=false">
+            </div>
+            <div class="app-form-validator-text animated">
+                <p v-if="testField.isNameNull">请输入姓名</p>
+            </div>
+            <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
+                <label>身份证号:</label>
+                <input type="text" class="form-text" placeholder="请输入身份证号码" v-model.trim="requestData.identity" @blur="identityTest" @focus="testField.isIdentityNull=false,testField.isIdentityTestFalse=false">
+            </div>
+            <div class="app-form-validator-text animated">
+                <p v-if="testField.isIdentityNull">请输入身份证号</p>
+                <p v-if="testField.isIdentityTestFalse">您输入的身份证号不正确！</p>
+            </div>
+            <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
+                <label>工种:</label>
+                <input type="text" class="form-text" readonly>
+            </div>
+            <div class="app-form-elem-wrapper margin-bottom-10 btn-wrapper">
+                <button type="button" class="common-btn common-all-length-btn common-active-btn btn-href" @click="comfirm" :disabled="isClickDisabled">
+                    <span class="font-white">确定</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="app-footer-nav">
+
+    <nav class="app-navigation-wrapper">
+
+        <ul class="app-navigation-lists clearfix">
+
+            <li>
+                <!--需要判断是否签到成功-->
+                <!-- <a class="block">签到</a>-->
+                <a class="block" href="/views/signin.html">签到</a>
+
+            </li>
+
+            <li>
+                <!--需要判断是否签退成功-->
+                <!-- <a class="block">签退</a>-->
+                <a class="block" href="/views/signout.html">签退</a>
+
+            </li>
+
+            <li class="active">
+
+                <a class="block" href="#">我的</a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</div>
+<script>
+    window.hook.appCrm.userControl();
+</script>
+</body>
+</html>

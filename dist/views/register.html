@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <title>注册</title>
+    <link rel="stylesheet" href="/static/css/base.min.css">
+    <script src="http://webapi.amap.com/maps?v=1.3&key=19d07b564cdcd9714bb4ff01c2ec87c7"></script>
+    <script src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="/static/js/bundle.min.js"></script>
+</head>
+<body>
+<style>
+    #register .app-checkbox-lists{
+        display: table-cell;
+        width: 100%;
+    }
+    #register .app-checkbox-lists>li{
+        float:left;
+        width:-webkit-calc((100% - 10px)/2);
+        width:calc((100% - 10px)/2);
+        height:35px;
+        line-height:35px;
+        margin-bottom:10px;
+        background:#fff;
+        border:1px solid #E6E5EA;
+        text-align:center;
+        border-radius:3px;
+    }
+    #register .app-checkbox-lists>li:nth-child(2n+1){
+        margin-right:10px;
+    }
+    #register .special-label{
+        vertical-align:top;
+    }
+    #register .c-label{
+        display:inline-block;
+        width:50px;
+        height:35px;
+        line-height:35px;
+    }
+    #register .app-form-spe-left{
+        width:50px;
+    }
+    #register .app-form-spe-right{
+        width:calc(100% - 60px);
+        width:-webkit-calc(100% - 60px);
+
+    }
+    #register .verify-text{
+        width:-webkit-calc(100% - 40% - 10px);
+        width:calc(100% - 40% - 10px);
+        height:45px;
+        line-height:45px;
+        padding:0 10px;
+        background-color:#fff;
+        border:1px solid #E6E5EA;
+        border-radius:3px;
+    }
+    #register .app-form-checkbox,
+    #register .app-form-verifycode{
+        padding-left:10px;
+    }
+    #register .btn-verify{
+        width:40%;
+        margin-left:10px;
+    }
+</style>
+<div class="app-common-section" id="register" v-if="isShow" v-cloak>
+    <div class="app-common-header">
+      <span>绑定</span>
+    </div>
+    <div class="app-common-body">
+        
+        <form>
+            
+                <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
+                    <label for="username">姓名:</label>
+                    <input type="text" placeholder="请输入姓名(必填)" id="username" name="username" class="form-text" @keyup="btnRegClass=true" v-model.trim="requestData.username" @blur="testName" @focus="verifyField.isNameNull=false">
+                </div>
+                <div class="app-form-validator-text animated">
+                    <p v-if="verifyField.isNameNull">请输入姓名</p>
+                </div>
+            
+                <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
+                    <label for="phonenum">电话:</label>
+                    <input type="text" placeholder="请输入电话号码(必填)" id="phonenum" class="form-text" name="phonenum" @keyup="btnRegClass=true" v-model.trim="requestData.phonenum" @blur="testPhone" @focus="verifyField.isPhoneNull=false,verifyField.isPhoneTestFalse=false">
+                </div>
+                <div class="app-form-validator-text animated">
+                    <p v-if="verifyField.isPhoneNull">请输入电话号码</p>
+                    <p v-if="verifyField.isPhoneTestFalse">您输入的电话号码格式有误！</p>
+                </div>
+            
+                <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
+                    <label for="identity">身份证号:</label>
+                    <input type="text" placeholder="请输入身份证号" id="identity" class="form-text" @keyup="btnRegClass=true" v-model.trim="requestData.identity" @blur="testIdentity" @focus="verifyField.isIdentityNull=false,verifyField.isIdentityTestFalse=false">
+                </div>
+                <div class="app-form-validator-text animated">
+                    <p v-if="verifyField.isIdentityNull">请输入身份证号</p>
+                    <p v-if="verifyField.isIdentityTestFalse">您输入的身份证号不正确！</p>
+                </div>
+            
+                <div class="app-form-elem-wrapper app-form-checkbox margin-bottom-10 clearfix">
+                    <div class="fl app-form-spe-left">
+                        <label for="identity" class="special-label c-label">工种:</label>
+                    </div>
+                    <ul class="app-checkbox-lists fr clearfix app-form-spe-right">
+                        <li v-for="(item,key) in typeName" :class="{'btn-special-tags':item.isSelect}" @click="changeStatus(key),btnRegClass=true,verifyField.isWorktypeNull=false">{{item.name}}</li>
+                    </ul>
+                </div>
+                <div class="app-form-validator-text animated">
+                    <p v-if="verifyField.isWorktypeNull">请选择工种</p>
+                </div>
+            
+                <div class="app-form-elem-wrapper app-form-verifycode margin-bottom-10 clearfix">
+                    
+                    
+                </div>
+                <div class="app-form-validator-text animated">
+                    <p v-if="verifyField.isVerifycodeNull">请输入验证码</p>
+                </div>
+            
+                <div class="app-form-elem-wrapper margin-bottom-10 btn-wrapper">
+                    <button type="button" class="common-btn common-all-length-btn common-inactive-btn btn-register" :class="{'common-active-btn':btnRegClass}" :disabled="btnRegDisable" @click="registerRequest">
+                        <span>注册</span>
+                    </button>
+                </div>
+            
+             <comp-verifycode :code-text="btnVerText" v-on:verifyclick="verifyRequest"></comp-verifycode>
+            </form>
+        
+        
+        <app-modal ref="successModal" :is-show-modal="modalObj.isShow" :transition-type="modalObj.transitionType">
+            <div slot="close" class="margin-bottom-20">
+                <a>关闭</a>
+            </div>
+            <div slot="content">
+                <a class="btn-ok margin-bottom-10"></a>
+                <h4 class="font-orange">恭喜您注册成功</h4>
+            </div>
+        </app-modal>
+
+    </div>
+</div>
+
+<script>
+    window.hook.appCrm.registerControl();
+</script>
+</body>
+</html>
