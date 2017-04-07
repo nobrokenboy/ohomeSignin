@@ -102,6 +102,7 @@ module.exports={
                     }
 
                     //请求接口
+                    console.log("请求接口");
                 },
                 registerRequest:function(){//注册
                     var self=this;

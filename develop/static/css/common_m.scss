@@ -211,7 +211,7 @@ input{
   background:$commonInActiveBtnBg;
 }
 .common-disabled-btn{
-  background:$commonDisabledBtnBg;
+  background:$commonDisabledBtnBg!important;
 }
 .common-common-btn{
   background:$commonBtnBg;

@@ -4,7 +4,12 @@
 var Vue=require("vue");
 /*验证码*/
 Vue.component("comp-verifycode",{
-    props:['codeText'],
+    props:{
+        second: {
+            type: Number,
+            default: 60
+        }
+    },
     template:'<div>\
         <div class="fl app-form-spe-left">\
             <label for="identity" class="c-label">验证码:</label>\
@@ -12,19 +17,47 @@ Vue.component("comp-verifycode",{
             <div class="fr app-form-spe-right clearfix">\
                 <input type="text" placeholder="请输入验证码" class="verify-text fl"/>\
                 <button type="button" class="common-btn common-inactive-btn btn-verify fr"\
-                    @click="verifyclick">\
+                     @click="verifyclick" :disabled="isVerifyClickDisabled">\
                     <span>{{codeText}}</span>\
                 </button>\
             </div>\
     </div>',
     data:function(){
         return {
-
+            time:0,
+            timer:null
         }
     },
+    computed:{
+        codeText:function(){
+            return  this.time==0?"获取验证码":this.time+"s后重新获取";
+        },
+        isVerifyClickDisabled:function(){
+            return  this.time==0?false:true;
+        }
+
+    },
     methods:{
+        setTime:function(){
+            var self=this;
+            self.time=self.second;
+        },
+        timeDeal: function () {
+            var self=this;
+            if(self.time==0){
+                clearInterval(self.timer);
+            }else{
+                self.time--;
+            }
+        },
         verifyclick:function(){
             var self=this;
+            self.setTime();
+            self.timeDeal();
+            self.timer=setInterval(function(){
+                self.timeDeal();
+                console.log(self.time);
+            },1000);
             self.$emit('verifyclick');
         }
     }

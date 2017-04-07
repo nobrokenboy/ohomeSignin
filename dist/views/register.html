@@ -131,7 +131,8 @@
                     </button>
                 </div>
             
-             <comp-verifycode :code-text="btnVerText" v-on:verifyclick="verifyRequest"></comp-verifycode>
+             <comp-verifycode ref="verifyCode" :second="60" v-on:verifyclick="verifyRequest">
+             </comp-verifycode>
             </form>
         
         

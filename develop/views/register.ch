@@ -136,7 +136,8 @@
                     </button>
                 </div>
             <!--测试组件-->
-             <comp-verifycode :code-text="btnVerText" v-on:verifyclick="verifyRequest"></comp-verifycode>
+             <comp-verifycode ref="verifyCode" :second="60" v-on:verifyclick="verifyRequest">
+             </comp-verifycode>
             </form>
         <!--注册成功弹框-->
         <!--<transition name="slide-fade" >
