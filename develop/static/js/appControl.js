@@ -6,8 +6,10 @@ var $=require('jquery');
 var vueResource=require('vue-resource');
 Vue.use(vueResource);
 var commondirective=-require('./mylibs/common_directive');
-var definedValidator=require('./mylibs/validator');
+var definedUtil=require('./mylibs/util');
 var components=require('./mylibs/components');
+var validator1=require('./mylibs/validator');
+Vue.use(validator1);
 module.exports={
     registerControl:function(){
         var vm=new Vue({
@@ -62,6 +64,7 @@ module.exports={
                     isIdentityNull:false,
                     isIdentityTestFalse:false,
                     isVerifycodeNull:false,
+                    isVerifycodeTestFalse:false,
                     isWorktypeNull:false
                 },
                 isValid:true,
@@ -82,8 +85,7 @@ module.exports={
                 },
                 verifyRequest: function () {//获取验证码
                     var self=this;
-                    self.btnVerText=self.timeValue+"s";
-                    //倒计时
+                   /* self.btnVerText=self.timeValue+"s";
                     timeDeal(self);
                     self.timer=setInterval(function(){
                         timeDeal(self);
@@ -99,7 +101,7 @@ module.exports={
                             self.btnVerText=self.timeValue+"s";
                             self.timeValue--;
                         }
-                    }
+                    }*/
 
                     //请求接口
                     console.log("请求接口");
@@ -167,15 +169,22 @@ module.exports={
                         self.verifyField.isIdentityNull=true;
                         return;
                     }
-                    var res=definedValidator.fisCardID(self.requestData.identity);
+                    var res=definedUtil.fisCardID(self.requestData.identity);
                     if(res!==true){
                         self.verifyField.isIdentityTestFalse=true;
                     }
                 },
-                testVerifycode:function(){
+                testVerifycode:function(code){
                     var self=this;
+                    self.requestData.verifycode=code;
+                    console.log(self.requestData.verifycode);
                     if(!self.requestData.verifycode){
                         self.verifyField.isVerifycodeNull=true;
+                        return;
+                    }
+                    //判断验证是不是数字
+                    if(isNaN(self.requestData.verifycode)){
+                        self.verifyField.isVerifycodeTestFalse=true;
                     }
                 }
             }
@@ -277,7 +286,7 @@ module.exports={
                         self.testField.isIdentityNull=true;
                         return;
                     }
-                    var res=definedValidator.fisCardID(self.requestData.identity);
+                    var res=definedUtil.fisCardID(self.requestData.identity);
                     if(res!==true){
                         self.testField.isIdentityTestFalse=true;
                     }

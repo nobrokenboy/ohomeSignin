@@ -54,6 +54,9 @@
         width:40%;
         margin-left:10px;
     }
+    #register .app-form-text-last{
+        margin-bottom:30px;
+    }
 </style>
 <div class="app-common-section" id="register" v-if="isShow" v-cloak>
     <div class="app-common-header">
@@ -64,18 +67,19 @@
         <form >
             <!--姓名-->
                 <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
-                    <label for="username">姓名:</label>
-                    <input type="text" placeholder="请输入姓名(必填)" id="username" name="username" class="form-text"
+                    <label>姓名:</label>
+                    <input type="text" placeholder="请输入姓名(必填)" name="username" class="form-text"
                     @keyup="btnRegClass=true" v-model.trim="requestData.username"
-                           @blur="testName" @focus="verifyField.isNameNull=false"/>
+                           @blur="testName" @focus="verifyField.isNameNull=false"
+                            v-vali:username.required.usernameRegx="1+1"/>
                 </div>
                 <div class="app-form-validator-text animated">
                     <p v-if="verifyField.isNameNull">请输入姓名</p>
                 </div>
             <!--电话-->
                 <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
-                    <label for="phonenum">电话:</label>
-                    <input type="text" placeholder="请输入电话号码(必填)" id="phonenum" class="form-text" name="phonenum"
+                    <label>电话:</label>
+                    <input type="text" placeholder="请输入电话号码(必填)"  class="form-text" name="phonenum"
                            @keyup="btnRegClass=true"  v-model.trim="requestData.phonenum"
                             @blur="testPhone" @focus="verifyField.isPhoneNull=false,verifyField.isPhoneTestFalse=false"/>
                 </div>
@@ -85,8 +89,8 @@
                 </div>
             <!--身份证-->
                 <div class="app-form-elem-wrapper app-form-input margin-bottom-10">
-                    <label for="identity">身份证号:</label>
-                    <input type="text" placeholder="请输入身份证号" id="identity" class="form-text"
+                    <label>身份证号:</label>
+                    <input type="text" placeholder="请输入身份证号"  class="form-text"
                            @keyup="btnRegClass=true" v-model.trim="requestData.identity"
                            @blur="testIdentity" @focus="verifyField.isIdentityNull=false,verifyField.isIdentityTestFalse=false"/>
                 </div>
@@ -97,7 +101,7 @@
             <!--工种-->
                 <div class="app-form-elem-wrapper app-form-checkbox margin-bottom-10 clearfix">
                     <div class="fl app-form-spe-left">
-                        <label for="identity" class="special-label c-label">工种:</label>
+                        <label  class="special-label c-label">工种:</label>
                     </div>
                     <ul class="app-checkbox-lists fr clearfix app-form-spe-right">
                         <li v-for="(item,key) in typeName" :class="{'btn-special-tags':item.isSelect}"
@@ -123,21 +127,26 @@
                             <span>{{btnVerText}}</span>
                         </button>
                     </div>-->
+                    <!--验证码组件-->
+                    <comp-verifycode ref="verifyCode" :second="60"  v-on:verifyclick="verifyRequest"
+                         v-on:codekeyup="btnRegClass=true" v-on:codeblur="testVerifycode" v-on:codefocus="verifyField.isVerifycodeNull=false,
+                         verifyField.isVerifycodeTestFalse=false">
+                        >
+
+                    </comp-verifycode>
                 </div>
-                <div class="app-form-validator-text animated">
+                <div class="app-form-validator-text animated app-form-text-last">
                     <p v-if="verifyField.isVerifycodeNull">请输入验证码</p>
+                    <p v-if="verifyField.isVerifycodeTestFalse">验证码格式有误</p>
                 </div>
             <!--注册按钮-->
-                <div class="app-form-elem-wrapper margin-bottom-10 btn-wrapper">
+                <div class="app-form-elem-wrapper margin-bottom-10">
                     <button type="button" class="common-btn common-all-length-btn common-inactive-btn btn-register"
                             :class="{'common-active-btn':btnRegClass}"
                             :disabled="btnRegDisable" @click="registerRequest">
                         <span>注册</span>
                     </button>
                 </div>
-            <!--测试组件-->
-             <comp-verifycode ref="verifyCode" :second="60" v-on:verifyclick="verifyRequest">
-             </comp-verifycode>
             </form>
         <!--注册成功弹框-->
         <!--<transition name="slide-fade" >

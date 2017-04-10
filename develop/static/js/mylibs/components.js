@@ -15,7 +15,8 @@ Vue.component("comp-verifycode",{
             <label for="identity" class="c-label">验证码:</label>\
             </div>\
             <div class="fr app-form-spe-right clearfix">\
-                <input type="text" placeholder="请输入验证码" class="verify-text fl"/>\
+                <input type="text" placeholder="请输入验证码" class="verify-text fl"\
+                v-model.trim="codeNum" @keyup="codekeyup" @blur="codeblur" @focus="codefocus"/>\
                 <button type="button" class="common-btn common-inactive-btn btn-verify fr"\
                      @click="verifyclick" :disabled="isVerifyClickDisabled">\
                     <span>{{codeText}}</span>\
@@ -25,7 +26,8 @@ Vue.component("comp-verifycode",{
     data:function(){
         return {
             time:0,
-            timer:null
+            timer:null,
+            codeNum:""
         }
     },
     computed:{
@@ -50,10 +52,21 @@ Vue.component("comp-verifycode",{
                 self.time--;
             }
         },
+        codekeyup: function () {
+            var self=this;
+            self.$emit('codekeyup');
+        },
+        codeblur: function () {
+            var self=this;
+            self.$emit('codeblur',self.codeNum);
+        },
+        codefocus: function () {
+            var self=this;
+            self.$emit('codefocus');
+        },
         verifyclick:function(){
             var self=this;
             self.setTime();
-            self.timeDeal();
             self.timer=setInterval(function(){
                 self.timeDeal();
                 console.log(self.time);

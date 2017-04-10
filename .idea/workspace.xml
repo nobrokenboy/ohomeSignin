@@ -24,8 +24,8 @@
       <file leaf-file-name="register.ch" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/develop/views/register.ch">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.5">
-              <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+            <state vertical-scroll-proportion="-9.222222">
+              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/views/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="appControl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/develop/static/js/appControl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.053572">
-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+            <state vertical-scroll-proportion="-3.139535">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -53,36 +53,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="components.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/components.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.625">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state vertical-scroll-proportion="-1.4464285">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="23" />
               <folding>
-                <marker date="1491559872403" expanded="true" signature="223:488" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="223:582" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="223:583" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="223:584" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="223:767" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="267:351" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="409:488" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="584:735" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="605:606" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="605:735" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="661:735" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1854:2183" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1854:2184" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1930:2149" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1930:2165" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2033" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2089" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2090" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2092" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2127" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2128" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2129" placeholder="..." />
-                <marker date="1491559872403" expanded="true" signature="1975:2149" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="223:488" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="223:677" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="223:678" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="223:679" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="223:862" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="267:351" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="409:488" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="490:586" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="679:830" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="700:701" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="700:830" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="756:830" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2279:2608" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2279:2609" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2355:2574" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2355:2590" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2458" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2514" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2515" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2517" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2552" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2553" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2554" placeholder="..." />
+                <marker date="1491796357305" expanded="true" signature="2400:2574" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validator.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/validator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5034965">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.035715">
+              <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,18 +123,8 @@
       <file leaf-file-name="signin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/views/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0">
-              <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/views/signout.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+              <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -130,8 +143,8 @@
       <file leaf-file-name="common_m.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/develop/static/css/common_m.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8191489">
-              <caret line="211" column="1" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
+            <state vertical-scroll-proportion="-3.796875">
+              <caret line="148" column="1" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -170,10 +183,8 @@
         <option value="$PROJECT_DIR$/develop/static/js/main.js" />
         <option value="$PROJECT_DIR$/develop/static/js/config/pattern.js" />
         <option value="$PROJECT_DIR$/develop/static/js/directive/common_directive.js" />
-        <option value="$PROJECT_DIR$/develop/static/js/mylibs/util.js" />
         <option value="$PROJECT_DIR$/develop/static/css/_variable.scss" />
         <option value="$PROJECT_DIR$/develop/static/css/base.scss" />
-        <option value="$PROJECT_DIR$/develop/static/js/mylibs/validator.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/develop/views/signout.ch" />
         <option value="$PROJECT_DIR$/develop/views/user.ch" />
@@ -187,10 +198,12 @@
         <option value="$PROJECT_DIR$/develop/static/css/my_animation.scss" />
         <option value="$PROJECT_DIR$/develop/static/vueComponents/bird.vue" />
         <option value="$PROJECT_DIR$/develop/static/components/bird.vue" />
-        <option value="$PROJECT_DIR$/develop/static/js/appControl.js" />
-        <option value="$PROJECT_DIR$/develop/views/register.ch" />
         <option value="$PROJECT_DIR$/develop/static/css/common_m.scss" />
         <option value="$PROJECT_DIR$/develop/static/js/mylibs/components.js" />
+        <option value="$PROJECT_DIR$/develop/static/js/mylibs/util.js" />
+        <option value="$PROJECT_DIR$/develop/views/register.ch" />
+        <option value="$PROJECT_DIR$/develop/static/js/appControl.js" />
+        <option value="$PROJECT_DIR$/develop/static/js/mylibs/validator.js" />
       </list>
     </option>
   </component>
@@ -280,8 +293,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -536,12 +547,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/xampp/htdocs/crm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -618,15 +631,15 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18821293" sideWeight="0.26485568" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18821293" sideWeight="0.7351443" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18821293" sideWeight="0.26070037" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18821293" sideWeight="0.7392996" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20939597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31006712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23726542" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23758389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -843,16 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/validator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43052393">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/develop/views/include/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.75">
@@ -864,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33178654">
           <caret line="10" column="11141" selection-start-line="10" selection-start-column="11133" selection-end-line="10" selection-end-column="11141" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,14 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.109375">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.428572">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -925,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +940,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/views/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
           <folding />
         </state>
@@ -957,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.857143">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,14 +973,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3651877">
           <caret line="1835" column="19" selection-start-line="1835" selection-start-column="19" selection-end-line="1835" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/views/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -997,9 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33173078">
           <caret line="5095" column="35" selection-start-line="5095" selection-start-column="28" selection-end-line="5095" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,60 +999,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/develop/static/js/appControl.js">
+    <entry file="file://$PROJECT_DIR$/develop/static/css/common_m.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.053572">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-3.796875">
+          <caret line="148" column="1" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/develop/static/css/common_m.scss">
+    <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8191489">
-          <caret line="211" column="1" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
+        <state vertical-scroll-proportion="-26.035715">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/develop/views/register.ch">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5">
-          <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+        <state vertical-scroll-proportion="-9.222222">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/components.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state vertical-scroll-proportion="-1.4464285">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="23" />
           <folding>
-            <marker date="1491559872403" expanded="true" signature="223:488" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="223:582" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="223:583" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="223:584" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="223:767" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="267:351" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="409:488" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="584:735" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="605:606" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="605:735" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="661:735" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1854:2183" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1854:2184" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1930:2149" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1930:2165" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2033" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2089" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2090" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2092" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2127" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2128" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2129" placeholder="..." />
-            <marker date="1491559872403" expanded="true" signature="1975:2149" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="223:488" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="223:677" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="223:678" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="223:679" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="223:862" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="267:351" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="409:488" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="490:586" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="679:830" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="700:701" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="700:830" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="756:830" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2279:2608" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2279:2609" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2355:2574" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2355:2590" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2458" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2514" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2515" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2517" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2552" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2553" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2554" placeholder="..." />
+            <marker date="1491796357305" expanded="true" signature="2400:2574" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/develop/static/js/appControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.139535">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/develop/static/js/mylibs/validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5034965">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>

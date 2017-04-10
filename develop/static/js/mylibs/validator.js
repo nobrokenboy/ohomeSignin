@@ -1,20 +1,60 @@
 /**
  * Created by jessic on 2017/4/5.
  */
-module.exports={
-    fisCardID: function (sId) {
-        var aCity={11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"}
-        var iSum=0 ;
-        var info="" ;
-        if(!/^\d{17}(\d|x)$/i.test(sId)) return "你输入的身份证长度或格式错误";
-        sId=sId.replace(/x$/i,"a");
-        if(aCity[parseInt(sId.substr(0,2))]==null) return "你的身份证地区非法";
-        sBirthday=sId.substr(6,4)+"-"+Number(sId.substr(10,2))+"-"+Number(sId.substr(12,2));
-        var d=new Date(sBirthday.replace(/-/g,"/")) ;
-        if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate()))return "身份证上的出生日期非法";
-        for(var i = 17;i>=0;i --) iSum += (Math.pow(2,i) % 11) * parseInt(sId.charAt(17 - i),11) ;
-        if(iSum%11!=1) return "你输入的身份证号非法";
+var Vue=require("vue");
+function hasClass(obj,className){
+    var reg=new RegExp('(\\s|^)'+className+'(\\s|$)');
+    return obj.className.match(new RegExp('(\\s|^)'+className+'(\\s|$)'));
+}
+function addClass(obj,className){
+    if(!hasClass(obj,className)){
+        obj.className+=" "+className;
+    }
+}
+function removeClass(obj,className){
+    if(hasClass(obj,className)){
+        var reg=new RegExp('(\\s|^)'+className+'(\\s|$)');
+        obj.className=obj.className.replace(reg,"");
+    }
+}
+function isEqual(val1,val2){
+    if(val1!==val2){
+       return false;
+    }else{
         return true;
     }
+}
+function stringify(val){
+    return JSON.stringify(val);
+}
+
+//正则表达式全局配置
+var regConfigGobal={
+    username:"",
+    phonenum:/^(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/,
+    identify:"",
+    email:/^[a-z0-9]+([._\-][a-z0-9])@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/,
+    minlength:""
+};
+//验证表单的对象
+var validatorComp={};
+validatorComp.install=function(Vue,options){
+    Vue.directive("vali",{
+        bind:function(el, binding, vnode){
+            console.log(el);
+            console.log(binding);
+            console.log(vnode);
+            var str=JSON.stringify;
+            console.log("name"+stringify(binding.name));
+            console.log("value"+stringify(binding.value));
+            console.log("modifiers"+stringify(binding.modifiers));
+            //获取修饰符
+            var modifiers=stringify(binding.modifiers);
+            //获取需要验证的类型
+            var testTypes=[];
+
+        }
+    });
 };
 
+module.exports=validatorComp;
