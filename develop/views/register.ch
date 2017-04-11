@@ -71,7 +71,7 @@
                     <input type="text" placeholder="请输入姓名(必填)" name="username" class="form-text"
                     @keyup="btnRegClass=true" v-model.trim="requestData.username"
                            @blur="testName" @focus="verifyField.isNameNull=false"
-                            v-vali:username.required.usernameRegx="1+1"/>
+                            v-valid.validRegConfig:username.required.valinow/>
                 </div>
                 <div class="app-form-validator-text animated">
                     <p v-if="verifyField.isNameNull">请输入姓名</p>
@@ -81,7 +81,8 @@
                     <label>电话:</label>
                     <input type="text" placeholder="请输入电话号码(必填)"  class="form-text" name="phonenum"
                            @keyup="btnRegClass=true"  v-model.trim="requestData.phonenum"
-                            @blur="testPhone" @focus="verifyField.isPhoneNull=false,verifyField.isPhoneTestFalse=false"/>
+                            @blur="testPhone" @focus="verifyField.isPhoneNull=false,verifyField.isPhoneTestFalse=false"
+                           v-valid:phone.required.valinow/>
                 </div>
                 <div class="app-form-validator-text animated">
                     <p v-if="verifyField.isPhoneNull">请输入电话号码</p>

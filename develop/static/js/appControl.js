@@ -76,6 +76,7 @@ module.exports={
             mounted: function () {
                 var self=this;
                 self.isShow=true;
+                console.log(self);
 
             },
             methods:{
