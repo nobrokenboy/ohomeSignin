@@ -4,5 +4,5 @@
 /*存放ejs变量*/
 module.exports={
     ctx:'/static',
-    title:'注册'
+    title:'工地签到'
 };
